@@ -113,6 +113,5 @@ Refer to [CONTRIBUTING.md](./docs/CONTRIBUTING.md)
 - [ ] Polish the app
 - [ ] Look into Plaid's API to auto-fetch transactions from user's credit cards
 
-## Support
 
-If you need help with anything or want to request new features, you can reach me on [discord](https://discord.com/users/521872289231273994) 👍
+
