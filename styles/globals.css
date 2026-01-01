@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 135 41% 0%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 135 5% 90%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 45%;
+
+    --accent: 0 10% 97%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 347 77% 50%;
+    --chart-2: 352 83% 91%;
+    --chart-3: 350 80% 72%;
+    --chart-4: 351 83% 82%;
+    --chart-5: 349 77% 62%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 231 16% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 231 16% 23%;
+    --primary-foreground: 0 0% 90%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 231 16% 13%;
+    --muted-foreground: 0 0% 75%;
+
+    --accent: 0 0% 9%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 0 0% 20%;
+    --border: 0 0% 15%;
+    --input: 0 0% 5%;
+
+    --chart-1: 347 77% 50%;
+    --chart-2: 349 77% 62%;
+    --chart-3: 350 80% 72%;
+    --chart-4: 351 83% 82%;
+    --chart-5: 352 83% 91%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* remove up and down buttons for number inputs */
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d00;
+}
+::-webkit-scrollbar-thumb {
+  background: #7b7b7b50;
+  border-radius: 8px;
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+div.introjs-tooltiptext {
+  padding-top: 0;
+}
+
+div.introjs-tooltipbuttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+  border-top: none;
+}
+
+a.introjs-button.introjs-nextbutton {
+  border-radius: 50px;
+  border: none;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4e54;
+  color: white;
+  text-shadow: none;
+}
+
+a.introjs-button.introjs-prevbutton {
+  border-radius: 50px;
+  border: none;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4e54;
+  color: white;
+  text-shadow: none;
+}
+
+a.introjs-button.introjs-prevbutton.introjs-disabled {
+  cursor: not-allowed;
+  border-radius: 50px;
+  border: none;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a8a8a;
+  color: white;
+  text-shadow: none;
+}
+
+div.introjs-tooltiptext {
+  padding-bottom: 0;
+}
+
+.introjs-helperLayer {
+  border: none;
+  box-shadow: none;
+}
+
+.introjs-bullets {
+  padding: 0 0;
+}
